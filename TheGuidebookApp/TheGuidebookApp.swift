@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct TheGuidebookAppApp: App {
+struct TheGuidebookApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CityView()
         }
     }
 }
