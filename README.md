@@ -6,7 +6,7 @@ Travel guide for users to discover cities and their attractions as well as recei
 <img width="335" alt="Screen Shot 2023-08-05 at 1 57 27 PM" src="https://github.com/nsb229/TheGuidebookApp/assets/126029768/c96cd747-294d-48e9-8eba-35b5b60b6e61">
 
 ## Attractions of the Chosen City
-#### The user will  be led to a page where attractions of the city are present
+#### After choosing a city, the user will  be led to a page where attractions of the city are present
 <img width="335" alt="Screen Shot 2023-08-05 at 1 57 57 PM" src="https://github.com/nsb229/TheGuidebookApp/assets/126029768/2fae5640-f502-4463-ab4e-df990ff4c692">
 
 ## Attraction Page
