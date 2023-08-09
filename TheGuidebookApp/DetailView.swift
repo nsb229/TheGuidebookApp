@@ -32,19 +32,38 @@ struct DetailView: View
                         .bold()
                     Text(attraction.longDescription)
                         .multilineTextAlignment(.leading)
-                    Button
+                   
+                    //Create URL instance based on URL scheme
+                    if let url = URL(string: "maps://?q=\(cleanName(name: attraction.name))&sll=\(cleanCoords(latLong: attraction.latLong))&z=10&t=s")
                     {
-                        let url = URL(string: "maps://")
-                    }
-                label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 15)
-                                .foregroundColor(.blue)
-                                .frame(height: 40)
-                            Text("Get directions")
-                                .foregroundColor(.white)
+                        
+                        //Test if url can be opened
+                        if UIApplication.shared.canOpenURL(url)
+                        {
+                            Button
+                            {
+                                
+                                //Open the URL
+                                UIApplication.shared.open(url)
+                                
+                            } label: {
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 15)
+                                        .foregroundColor(.blue)
+                                        .frame(height: 40)
+                                    Text("Get directions")
+                                        .foregroundColor(.white)
+                                }
+                            }
+                            
+                           
+                            
                         }
+                        
                     }
+                    
+                    
+                   
 
                 }
                 .padding(.bottom, 20)
@@ -55,6 +74,18 @@ struct DetailView: View
         .ignoresSafeArea()
         
         
+        
+    }
+    
+    func cleanName(name: String) -> String {
+        
+        return name.replacingOccurrences(of: " ", with: "").folding(options: .diacriticInsensitive, locale: .current)
+        
+    }
+    
+    func cleanCoords(latLong: String) -> String {
+        
+        return latLong.replacingOccurrences(of: " ", with: "")
         
     }
 }

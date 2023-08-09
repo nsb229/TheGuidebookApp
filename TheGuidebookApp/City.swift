@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct City: Identifiable
-{
-    var id = UUID()
+struct City: Identifiable, Decodable {
+    
+    let id = UUID()
     //to differentiate between the cities
     
     //different parts of the view
