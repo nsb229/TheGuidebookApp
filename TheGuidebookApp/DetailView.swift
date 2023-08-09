@@ -15,7 +15,7 @@ struct DetailView: View
     var body: some View
     {
         
-        VStack (spacing: 20)
+        VStack  (spacing: 20)
         {
             Image(attraction.imageName)
                 .resizable()
