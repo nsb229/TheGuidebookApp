@@ -14,5 +14,5 @@ Travel guide for users to discover cities and their attractions as well as recei
 <img width="335" alt="Screen Shot 2023-08-05 at 1 58 08 PM" src="https://github.com/nsb229/TheGuidebookApp/assets/126029768/c723c9df-d49e-45ac-9002-50f081045c80">
 
 ### Getting Started
-Access the project by going under the green 'Code' button and clicking 'Open with XCode.'
-Navigate to the CityView, and pick a city (such as Tokyo). 
+Access the project by going under the green Code button and clicking Open with XCode.
+To Run: ⌘R ( Command + R ) 
